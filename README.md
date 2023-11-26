@@ -1,27 +1,46 @@
-# React + TypeScript + Vite
+# CALCULADORA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Súmario
 
-Currently, two official plugins are available:
+<ul>
+  <li><a href="#Sobre" >Sobre</a></li>
+  <li><a href="#Features" >Features</a></li>
+  <li><a href="#Funcionamento" >Funcionamento</a></li>
+  <li><a href="#Pré-requisitos" >Pré-requisitos</a></li>
+  <li><a href="#Como-rodar" >Como rodar</a></li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre
 
-## Expanding the ESLint configuration
+<p>Calculadora simples e funcional desenvolvida por meio das tecnologias Reactjs, Typescript e Styled-Components, 
+   que possui as operações matemáticas básicas.</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- [x] Inserir números no visor.
+- [x] Deletar números do visor.
+- [x] Realizar operações com os números.
+- [x] Visualizar o resultado da operação.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Funcionamento
+
+<img src="src/assets/background_projeto.gif" alt="Gif do projeto cronômetro funcionando" />
+
+## Pré-requisitos
+
+<p>Para rodar o projeto são necessárias as seguintes ferramentas:
+<a href="https://nodejs.org/en" target="blank" >Nodejs<a/> e <a href="https://git-scm.com/" target="blank">Git<a/>.
+Ademais, é aconselhavel ter um editor de código, como o <a href="https://code.visualstudio.com/" alt="Link para o VScode target="blank">VScode</a>.</p>
+
+## Como rodar
+```bash
+# Clone este repositório
+$ git clone "https://github.com/Projetos-React/Pomodoro.git"
+
+# Digite os comandos a seguir para executar o projeto no seu navegador
+$ npm i
+$ npm run dev
+
+
+
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
